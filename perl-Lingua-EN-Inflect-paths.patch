@@ -1,0 +1,40 @@
+--- Lingua-EN-Inflect-1.84/demo_eq.pl.perlpath	Wed Mar 25 18:52:15 1998
++++ Lingua-EN-Inflect-1.84/demo_eq.pl	Wed May 12 00:11:49 1999
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -ws
++#! /usr/bin/perl -ws
+ 
+ use Lingua::EN::Inflect qw { :COMPARISONS };
+ use vars qw { $classical $modern };
+--- Lingua-EN-Inflect-1.84/demo_PL.pl.perlpath	Wed Mar 18 14:14:03 1998
++++ Lingua-EN-Inflect-1.84/demo_PL.pl	Wed May 12 00:11:49 1999
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -ws
++#! /usr/bin/perl -ws
+ 
+ use Lingua::EN::Inflect qw { classical PL };
+ use vars qw { $classical $modern };
+--- Lingua-EN-Inflect-1.84/demo_NO.pl.perlpath	Wed Mar 18 14:13:58 1998
++++ Lingua-EN-Inflect-1.84/demo_NO.pl	Wed May 12 00:11:49 1999
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -ws
++#! /usr/bin/perl -ws
+ 
+ use Lingua::EN::Inflect qw { classical NO };
+ use vars qw { $classical $modern };
+--- Lingua-EN-Inflect-1.84/demo_NUM.pl.perlpath	Tue Apr  7 01:13:47 1998
++++ Lingua-EN-Inflect-1.84/demo_NUM.pl	Wed May 12 00:11:49 1999
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -ws
++#! /usr/bin/perl -ws
+ 
+ use Lingua::EN::Inflect qw { classical NUM inflect };
+ use vars qw { $classical $modern };
+--- Lingua-EN-Inflect-1.84/demo_inflect.pl.perlpath	Tue Mar 24 18:53:13 1998
++++ Lingua-EN-Inflect-1.84/demo_inflect.pl	Wed May 12 00:11:49 1999
+@@ -1,4 +1,4 @@
+-#! /usr/local/bin/perl -ws
++#! /usr/bin/perl -ws
+ 
+ use Lingua::EN::Inflect qw { &inflect &classical };
+ use vars qw { $classical $modern };
