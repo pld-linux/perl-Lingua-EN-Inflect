@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Lingua::EN::Inflect
 Summary(it):	Modulo di Perl Lingua::EN::Inflect
 Summary(ja):	Lingua::EN::Inflect Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Lingua::EN::Inflect ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Lingua::EN::Inflect
+Summary(nb):	Perlmodul Lingua::EN::Inflect
 Summary(pl):	Modu³ Perla Lingua::EN::Inflect
 Summary(pt):	Módulo de Perl Lingua::EN::Inflect
 Summary(pt_BR):	Módulo Perl Lingua::EN::Inflect
