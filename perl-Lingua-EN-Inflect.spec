@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Lingua
 %define	pnam	EN-Inflect
-Summary:	Lingua-EN-Inflect perl module
-Summary(pl):	Modu³ perla Lingua-EN-Inflect
+Summary:	Lingua::EN::Inflect perl module
+Summary(pl):	Modu³ perla Lingua::EN::Inflect
 Name:		perl-Lingua-EN-Inflect
 Version:	1.87
 Release:	4
@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Lingua-EN-Inflect - singular to plural conversions and "a"/"an"
+Lingua::EN::Inflect - singular to plural conversions and "a"/"an"
 selection for English words.
 
 %description -l pl
-Lingua-EN-Inflect - konwersja pomiêdzy liczb± pojedyncz± a mnog± z
+Lingua::EN::Inflect - konwersja pomiêdzy liczb± pojedyncz± a mnog± z
 wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
 
 %prep
