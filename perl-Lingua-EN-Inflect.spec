@@ -1,11 +1,29 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Lingua
-%define	pnam	EN-Inflect
-Summary:	Lingua::EN::Inflect perl module
-Summary(pl):	Modu³ perla Lingua::EN::Inflect
+%define		pdir	Lingua
+%define		pnam	EN-Inflect
+Summary:	Lingua::EN::Inflect Perl module
+Summary(cs):	Modul Lingua::EN::Inflect pro Perl
+Summary(da):	Perlmodul Lingua::EN::Inflect
+Summary(de):	Lingua::EN::Inflect Perl Modul
+Summary(es):	Módulo de Perl Lingua::EN::Inflect
+Summary(fr):	Module Perl Lingua::EN::Inflect
+Summary(it):	Modulo di Perl Lingua::EN::Inflect
+Summary(ja):	Lingua::EN::Inflect Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Lingua::EN::Inflect ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Lingua::EN::Inflect
+Summary(pl):	Modu³ Perla Lingua::EN::Inflect
+Summary(pt):	Módulo de Perl Lingua::EN::Inflect
+Summary(pt_BR):	Módulo Perl Lingua::EN::Inflect
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Lingua::EN::Inflect
+Summary(sv):	Lingua::EN::Inflect Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Lingua::EN::Inflect
+Summary(zh_CN):	Lingua::EN::Inflect Perl Ä£¿é
 Name:		perl-Lingua-EN-Inflect
 Version:	1.88
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -30,6 +48,7 @@ wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -43,9 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_sitelib}/Lingua/EN/Inflect.pm
-%{perl_sitelib}/Lingua/EN/demo_NO.pl
-%{perl_sitelib}/Lingua/EN/demo_NUM.pl
-%{perl_sitelib}/Lingua/EN/demo_PL.pl
-%{perl_sitelib}/Lingua/EN/demo_eq.pl
-%{perl_sitelib}/Lingua/EN/demo_inflect.pl
+%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_NO.pl
+%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_NUM.pl
+%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_PL.pl
+%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_eq.pl
+%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_inflect.pl
 %{_mandir}/man3/*
