@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Lingua
 %define	pnam	EN-Inflect
-%include	/usr/lib/rpm/macros.perl
 Summary:	Lingua-EN-Inflect perl module
 Summary(pl):	Modu³ perla Lingua-EN-Inflect
 Name:		perl-Lingua-EN-Inflect
 Version:	1.87
-Release:	3
-
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ Lingua-EN-Inflect - konwersja pomiêdzy liczb± pojedyncz± a mnog± z
 wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
 
 %prep
-%setup -q -n Lingua-EN-Inflect-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
