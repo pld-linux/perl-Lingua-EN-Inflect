@@ -5,26 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Lingua
 %define		pnam	EN-Inflect
-Summary:	Lingua::EN::Inflect Perl module
-Summary(cs):	Modul Lingua::EN::Inflect pro Perl
-Summary(da):	Perlmodul Lingua::EN::Inflect
-Summary(de):	Lingua::EN::Inflect Perl Modul
-Summary(es):	Módulo de Perl Lingua::EN::Inflect
-Summary(fr):	Module Perl Lingua::EN::Inflect
-Summary(it):	Modulo di Perl Lingua::EN::Inflect
-Summary(ja):	Lingua::EN::Inflect Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Lingua::EN::Inflect ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Lingua::EN::Inflect
-Summary(pl):	Modu³ Perla Lingua::EN::Inflect
-Summary(pt):	Módulo de Perl Lingua::EN::Inflect
-Summary(pt_BR):	Módulo Perl Lingua::EN::Inflect
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Lingua::EN::Inflect
-Summary(sv):	Lingua::EN::Inflect Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Lingua::EN::Inflect
-Summary(zh_CN):	Lingua::EN::Inflect Perl Ä£¿é
+Summary:	Lingua::EN::Inflect - convert singular to plural - select "a" or "an"
+Summary(pl):	Lingua::EN::Inflect - konwersja liczby pojedynczej na mnog± z wyborem "a" lub "an"
 Name:		perl-Lingua-EN-Inflect
 Version:	1.88
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -37,12 +22,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Lingua::EN::Inflect - singular to plural conversions and "a"/"an"
-selection for English words.
+The exportable subroutines of Lingua::EN::Inflect provide plural
+inflections, "a"/"an" selection for English words, and manipulation of
+numbers as words
 
 %description -l pl
-Lingua::EN::Inflect - konwersja pomiêdzy liczb± pojedyncz± a mnog± z
-wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
+Eksportowalne procedury Lingua::EN::Inflect umo¿liwiaj± konwersjê
+pomiêdzy liczb± pojedyncz± a mnog± z wyborem "a"/"an" dla wyrazów w
+jêzyku angielskim oraz manipulacje na wielu wyrazach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
