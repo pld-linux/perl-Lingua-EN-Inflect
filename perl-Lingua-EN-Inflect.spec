@@ -23,13 +23,13 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Lingua::EN::Inflect
 Summary(zh_CN):	Lingua::EN::Inflect Perl Ä£¿é
 Name:		perl-Lingua-EN-Inflect
 Version:	1.88
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,7 +46,8 @@ wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -61,10 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Lingua/EN/Inflect.pm
-%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_NO.pl
-%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_NUM.pl
-%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_PL.pl
-%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_eq.pl
-%attr(755,root,root) %{perl_sitelib}/Lingua/EN/demo_inflect.pl
+%{perl_vendorlib}/Lingua/EN/Inflect.pm
+%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_NO.pl
+%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_NUM.pl
+%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_PL.pl
+%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_eq.pl
+%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_inflect.pl
 %{_mandir}/man3/*
