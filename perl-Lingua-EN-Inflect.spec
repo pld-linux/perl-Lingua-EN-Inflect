@@ -4,8 +4,8 @@
 Summary:	Lingua::EN::Inflect perl module
 Summary(pl):	Modu³ perla Lingua::EN::Inflect
 Name:		perl-Lingua-EN-Inflect
-Version:	1.87
-Release:	4
+Version:	1.88
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
