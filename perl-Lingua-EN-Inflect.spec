@@ -7,8 +7,8 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Lingua/Lingua-EN-Inflect-%{version}.tar.gz
-Patch:		perl-Lingua-EN-Inflect-paths.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Lingua/Lingua-EN-Inflect-%{version}.tar.gz
+Patch0:		perl-Lingua-EN-Inflect-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -16,12 +16,12 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Lingua-EN-Inflect - singular to plural conversions and "a"/"an" selection 
-for English words.
+Lingua-EN-Inflect - singular to plural conversions and "a"/"an"
+selection for English words.
 
 %description -l pl
-Lingua-EN-Inflect - konwersja pomiêdzy liczb± pojedyncz± a mnog± z wyborem
-"a"/"an" dla wyrazów w jêzyku angielskim. 
+Lingua-EN-Inflect - konwersja pomiêdzy liczb± pojedyncz± a mnog± z
+wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
 
 %prep
 %setup -q -n Lingua-EN-Inflect-%{version}
