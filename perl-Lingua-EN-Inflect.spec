@@ -48,7 +48,7 @@ wyborem "a"/"an" dla wyrazów w jêzyku angielskim.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{!?_without_tests:%{__make} test}
 
