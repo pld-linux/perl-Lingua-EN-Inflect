@@ -25,7 +25,8 @@ Summary(zh_CN):	Lingua::EN::Inflect Perl Ä£¿é
 Name:		perl-Lingua-EN-Inflect
 Version:	1.88
 Release:	3
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e5100ee54bfb389f7ccee88af70ab6a0
