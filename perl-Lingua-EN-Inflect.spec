@@ -23,7 +23,7 @@ Summary(uk):	Модуль для Perl Lingua::EN::Inflect
 Summary(zh_CN):	Lingua::EN::Inflect Perl дё©И
 Name:		perl-Lingua-EN-Inflect
 Version:	1.88
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
