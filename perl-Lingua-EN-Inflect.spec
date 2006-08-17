@@ -9,7 +9,7 @@ Summary:	Lingua::EN::Inflect - convert singular to plural - select "a" or "an"
 Summary(pl):	Lingua::EN::Inflect - konwersja liczby pojedynczej na mnog± z wyborem "a" lub "an"
 Name:		perl-Lingua-EN-Inflect
 Version:	1.89
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -46,12 +46,15 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Lingua/EN/Inflect
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Lingua/EN/Inflect
 %{perl_vendorlib}/Lingua/EN/Inflect.pm
 %attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_NO.pl
 %attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_NUM.pl
