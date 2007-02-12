@@ -6,7 +6,7 @@
 %define		pdir	Lingua
 %define		pnam	EN-Inflect
 Summary:	Lingua::EN::Inflect - convert singular to plural - select "a" or "an"
-Summary(pl):	Lingua::EN::Inflect - konwersja liczby pojedynczej na mnog± z wyborem "a" lub "an"
+Summary(pl.UTF-8):   Lingua::EN::Inflect - konwersja liczby pojedynczej na mnogÄ… z wyborem "a" lub "an"
 Name:		perl-Lingua-EN-Inflect
 Version:	1.89
 Release:	2
@@ -25,10 +25,10 @@ The exportable subroutines of Lingua::EN::Inflect provide plural
 inflections, "a"/"an" selection for English words, and manipulation of
 numbers as words
 
-%description -l pl
-Eksportowalne procedury Lingua::EN::Inflect umo¿liwiaj± konwersjê
-pomiêdzy liczb± pojedyncz± a mnog± z wyborem "a"/"an" dla wyrazów w
-jêzyku angielskim oraz manipulacje na wielu wyrazach.
+%description -l pl.UTF-8
+Eksportowalne procedury Lingua::EN::Inflect umoÅ¼liwiajÄ… konwersjÄ™
+pomiÄ™dzy liczbÄ… pojedynczÄ… a mnogÄ… z wyborem "a"/"an" dla wyrazÃ³w w
+jÄ™zyku angielskim oraz manipulacje na wielu wyrazach.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
