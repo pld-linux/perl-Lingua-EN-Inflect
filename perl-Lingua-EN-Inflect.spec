@@ -8,13 +8,13 @@
 Summary:	Lingua::EN::Inflect - convert singular to plural - select "a" or "an"
 Summary(pl.UTF-8):	Lingua::EN::Inflect - konwersja liczby pojedynczej na mnogą z wyborem "a" lub "an"
 Name:		perl-Lingua-EN-Inflect
-Version:	1.89
-Release:	3
+Version:	1.891
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ca864087a32754a8185d30fa677121ea
+# Source0-md5:	1443da045ddd79c8b2c2670cbe8d4cb9
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -56,9 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %dir %{perl_vendorlib}/Lingua/EN/Inflect
 %{perl_vendorlib}/Lingua/EN/Inflect.pm
-%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_NO.pl
-%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_NUM.pl
-%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_PL.pl
-%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_eq.pl
-%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/demo_inflect.pl
+%attr(755,root,root) %{perl_vendorlib}/Lingua/EN/Build.pl
 %{_mandir}/man3/*
