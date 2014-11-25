@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Lingua
 %define		pnam	EN-Inflect
+%include	/usr/lib/rpm/macros.perl
 Summary:	Lingua::EN::Inflect - convert singular to plural - select "a" or "an"
 Summary(pl.UTF-8):	Lingua::EN::Inflect - konwersja liczby pojedynczej na mnogą z wyborem "a" lub "an"
 Name:		perl-Lingua-EN-Inflect
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	96ce4517a21800a6e90df1f4cdd515a5
+URL:		http://search.cpan.org/dist/Lingua-EN-Inflect/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -48,7 +49,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Lingua/EN/Inflect
-install demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p demo/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
