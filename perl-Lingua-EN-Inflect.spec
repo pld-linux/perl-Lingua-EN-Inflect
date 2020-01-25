@@ -4,7 +4,6 @@
 
 %define		pdir	Lingua
 %define		pnam	EN-Inflect
-%include	/usr/lib/rpm/macros.perl
 Summary:	Lingua::EN::Inflect - convert singular to plural - select "a" or "an"
 Summary(pl.UTF-8):	Lingua::EN::Inflect - konwersja liczby pojedynczej na mnogą z wyborem "a" lub "an"
 Name:		perl-Lingua-EN-Inflect
